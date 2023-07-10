@@ -5,7 +5,6 @@ import {Grid, Transition} from 'semantic-ui-react'
 import {AuthContext} from '../context/auth'
 import PostCard from '../components/PostCard'
 import PostForm from '../components/PostForm'
-import UploadForm from '../components/UploadForm'
 import {FETCH_POSTS_QUERY} from '../utils/graphql'
 import {ApolloProvider, ApolloClient, InMemoryCache} from '@apollo/client'
 import {createUploadLink} from 'apollo-upload-client';
@@ -35,7 +34,6 @@ function Home() {
       {user && (
         <Grid.Column>
           <PostForm/>
-          <UploadForm/>  
           </Grid.Column>
       )} 
      {loading ? ( 
