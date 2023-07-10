@@ -12,7 +12,7 @@ const httpLink = createHttpLink({
 })
 
 const uploadLink = createUploadLink({
-    uri: 'http://localhost:5000/'
+    uri: 'https://merng.onrender.com/'
 })
 const authLink = setContext(() => {
     const token = localStorage.getItem("jwtToken");
