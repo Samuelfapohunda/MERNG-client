@@ -8,7 +8,7 @@ import {setContext} from 'apollo-link-context'
 import {createUploadLink} from 'apollo-upload-client';
 
 const httpLink = createHttpLink({
-    uri: 'http://localhost:5000'
+    uri: 'https://merng.onrender.com/'
 })
 
 const uploadLink = createUploadLink({
