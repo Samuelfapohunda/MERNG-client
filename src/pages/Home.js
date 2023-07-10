@@ -13,7 +13,7 @@ import {createUploadLink} from 'apollo-upload-client';
 
 const client = new ApolloClient({
  link: createUploadLink({
-  uri: 'http://localhost:5000/'
+  uri: 'https://merng.onrender.com/'
  }),
  cache:  new InMemoryCache(),
 })
